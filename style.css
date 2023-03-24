@@ -5,11 +5,12 @@
 
 
 body {
-    
     cursor: text;
-    background-color: #13c013b2;
+    /* background-color: #13c013b2; */
+    background-color: #51dd22be;
     color: black;
     font-family: 'Fixedsys';
+    font-size: larger;
 }
 
 
@@ -36,6 +37,20 @@ p {
     font-size: larger;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#asciiDivider {
+    letter-spacing: 0.1em;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+#portfolioText {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 a {
@@ -81,11 +96,13 @@ header p {
 }
 
 .linkgo {
-    color: #69ff5e;
+    
+    color: rgb(255, 255, 255)
 }
 
 .consoleMenu {
-    height: 2ch;
+    height: 1.5rem;
+    font-size: 1.5rem;
     background-color: rgba(0, 0, 0, 0.061);
     border-bottom: 2px solid black;
     display: flex;
@@ -252,3 +269,48 @@ header p {
       transform: rotateX(0deg) skewX(0deg);
     }
   }
+
+  @keyframes imageGlitch {
+    0%{
+        filter: grayscale(5%);
+        filter: blur(0.3px);
+    }
+    20%{
+        filter: grayscale(20%);
+    }
+    30%{
+        filter: blur(0.75px);
+    }
+    35%{
+        filter: blur(1.5px);
+    }
+    37%{
+        filter: blur(0.3px);
+        filter: grayscale(5%);
+    }
+    39%{
+        filter: blur(0.5px);
+        filter: grayscale(5%);
+    }
+    60%{
+        filter: grayscale(31%);
+        filter: blur(0.3px);
+    }
+    80%{
+        filter: grayscale(7%);
+    }
+    100%{
+        filter: grayscale(3%);
+    }
+
+  }
+
+
+  img {
+    border: 1px darkgreen solid;
+    animation: imageGlitch 8s 1s infinite;
+    /* filter: grayscale(50%);
+    filter: blur(1px);
+    filter: contrast(100%); */
+  }
+
