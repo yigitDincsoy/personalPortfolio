@@ -5,6 +5,8 @@
 
 
 body {
+    
+    cursor: text;
     background-color: #13c013b2;
     color: black;
     font-family: 'Fixedsys';
@@ -64,8 +66,11 @@ header p {
     animation: typing 2s steps(14), blink .9s step-end infinite alternate;
 }
 
+.linkgo {
+    font-style: italic;
+}
 
-.introConsoleMenu {
+.consoleMenu {
     height: 2ch;
     background-color: rgba(0, 0, 0, 0.061);
     border-bottom: 2px solid black;
@@ -216,3 +221,20 @@ header p {
     border: solid 2px black;
     margin-top: 10px;
 }
+
+.terminalSelectedText {
+    display: inline-block;
+    animation: glitch-2 4s 3s infinite;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes glitch-2 {
+    1%{
+      transform: rotateX(10deg) skewX(70deg);
+    }
+    2%{
+      transform: rotateX(0deg) skewX(0deg);
+    }
+  }
