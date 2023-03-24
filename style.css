@@ -28,6 +28,9 @@ body {
     margin: auto;
 }
 
+p {
+    padding: 5px;
+}
 
 #portos {
     font-size: larger;
@@ -62,6 +65,12 @@ header p {
     font-size: 2.5em;
 }
 
+.terminalImage {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+    width: 60%;
+}
 .waitingPrompt {
     animation: typing 2s steps(14), blink .9s step-end infinite alternate;
 }
