@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Fixedsys';
+    src: url('Fixedsys.ttf');
+}
+
+
+body {
+    background-color: #13c013b2;
+    color: black;
+    font-family: 'Fixedsys';
+}
+
+
+.introConsole {
+    background-color: #13c0133e;
+    border: 2px solid black;
+}
+
+.introConsole p {
+    font-size: larger;
+    margin-left: 5px;
+}
+
+.Main {
+    width: 80%;
+    margin: auto;
+}
+
+
+#portos {
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    all: unset;
+}
+
+header {
+    font-size: larger;
+    display: flex;
+    justify-content: space-around;
+}
+
+header p {
+    margin-left: 5px;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.typingText {
+    width: 14ch;
+    animation: typing 2s steps(14), blink .9s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 2.5em;
+}
+
+.waitingPrompt {
+    animation: typing 2s steps(14), blink .9s step-end infinite alternate;
+}
+
+
+.introConsoleMenu {
+    height: 2ch;
+    background-color: rgba(0, 0, 0, 0.061);
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+#exitx {
+    margin-left: 90%;
+
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+
+@keyframes flicker {
+    0% {
+        opacity: 0.15795
+    }
+
+    5% {
+        opacity: 0.33
+    }
+
+    10% {
+        opacity: 0.55
+    }
+
+    15% {
+        opacity: 0.44
+    }
+
+    20% {
+        opacity: 0.66
+    }
+
+    25% {
+        opacity: 0.00
+    }
+
+    30% {
+        opacity: 0.22
+    }
+
+    35% {
+        opacity: 0.44
+    }
+
+    40% {
+        opacity: 0.55
+    }
+
+    45% {
+        opacity: 0.55
+    }
+
+    50% {
+        opacity: 0.33
+    }
+
+    55% {
+        opacity: 0.11
+    }
+
+    60% {
+        opacity: 0.77
+    }
+
+    65% {
+        opacity: 0.22
+    }
+
+    70% {
+        opacity: 0.77
+    }
+
+    75% {
+        opacity: 0.22
+    }
+
+    80% {
+        opacity: 0.77
+    }
+
+    85% {
+        opacity: 0.22
+    }
+
+    90% {
+        opacity: 0.24467
+    }
+
+    95% {
+        opacity: 0.08351
+    }
+
+    100% {
+        opacity: 0.54813
+    }
+}
+
+.overlay::after {
+    animation: flicker 10s infinite;
+    background: rgba(16, 16, 16, 0.1);
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+.overlay::before {
+    background: linear-gradient(#101010 50%, rgba(16, 16, 16, 0.05) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.0011), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.05));
+    background-size: 100% 0px, 6px 100%;
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+
+}
+
+.project {
+    background-color: #13c0133e;
+    border: solid 2px black;
+    margin-top: 10px;
+}
