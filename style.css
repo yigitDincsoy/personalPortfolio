@@ -40,6 +40,8 @@ p {
 
 a {
     all: unset;
+    padding: 5px;
+
 }
 
 header {
@@ -69,14 +71,17 @@ header p {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-    width: 60%;
+  width: 50%;
+
 }
+
+
 .waitingPrompt {
     animation: typing 2s steps(14), blink .9s step-end infinite alternate;
 }
 
 .linkgo {
-    font-style: italic;
+    color: #69ff5e;
 }
 
 .consoleMenu {
