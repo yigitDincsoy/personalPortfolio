@@ -3,7 +3,6 @@
     src: url('Fixedsys.ttf');
 }
 
-
 body {
     cursor: text;
     /* background-color: #13c013b2; */
@@ -11,6 +10,26 @@ body {
     color: black;
     font-family: 'Fixedsys';
     font-size: larger;
+}
+
+
+
+#emailArea {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#clipboardCopiedMessage {
+    position: relative;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    top: -3rem;
+    display: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
 }
 
 
@@ -33,12 +52,13 @@ p {
     padding: 5px;
 }
 
-#portos {
+#portfolioHeader {
     font-size: larger;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 #asciiDivider {
@@ -59,7 +79,15 @@ a {
 
 }
 
-header {
+
+
+a:hover, #myEmail{
+    cursor: help;
+}
+
+
+
+header, footer {
     font-size: larger;
     display: flex;
     justify-content: space-around;
@@ -87,8 +115,8 @@ header p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
 }
+
 
 
 .waitingPrompt {
@@ -96,8 +124,9 @@ header p {
 }
 
 .linkgo {
-    
-    color: rgb(255, 255, 255)
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #199515;
 }
 
 .consoleMenu {
