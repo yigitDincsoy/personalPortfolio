@@ -131,10 +131,11 @@ header p {
 
 .consoleMenu {
     height: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.061);
     border-bottom: 2px solid black;
     display: flex;
+    align-items: center;
     justify-content: space-between;
    
 }
@@ -288,6 +289,12 @@ header p {
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+.glitched {
+    display: inline-block;
+    animation: glitch-2 4s 3s infinite;
+}
+
 
 
 @keyframes glitch-2 {
