@@ -93,8 +93,18 @@ header, footer {
     justify-content: space-around;
 }
 
+footer {
+    font-size: large;
+    width: 70%;
+    margin: auto;
+}
+
 header p {
     margin-left: 5px;
+}
+
+.hideme {
+    display: none;
 }
 
 .wrapper {
@@ -115,6 +125,7 @@ header p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  min-width: 420px;
 }
 
 
