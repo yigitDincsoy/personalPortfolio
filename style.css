@@ -15,6 +15,7 @@ body {
 
 #clipboardCopiedMessage {
     position: relative;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     top: -3rem;
@@ -117,7 +118,7 @@ header p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  min-width: 420px;
+  min-width: 40%;
 }
 
 
@@ -358,7 +359,6 @@ header p {
 
   footer {
     display: flex;
-    font-size: 1.1rem;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
